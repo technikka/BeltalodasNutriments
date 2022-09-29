@@ -1,1 +1,3 @@
-console.log('hello from index.js');
+import { createPageContent } from './initial-page'
+
+createPageContent();
