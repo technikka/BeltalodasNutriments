@@ -1,0 +1,5 @@
+const menuPageContent = () => {
+
+}
+
+export { menuPageContent }

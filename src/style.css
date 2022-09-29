@@ -10,13 +10,18 @@ html {
   background-size: cover;
 }
 
+body {
+  width: 100%;
+  margin: 0;
+  /* margin-top: 10px; */
+}
+
 #content {
   display: grid;
   justify-items: center;
   gap: 30px;
   font-family: 'Demora';
   padding: 20px;
-  /* max-width: 600px; */
 }
 
 .backdrop {
@@ -25,10 +30,44 @@ html {
   border-radius: 10px;
   padding: 15px;
   border: 3px solid #f6c6af;
+  width: 600px;
+  text-align: center;
+}
+
+#navbar {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 28px;
+  padding: 0;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+#navbar div {
+  padding: 15px;
+  border-left: 2px solid #f6c6af;
+  border-right: 2px solid #f6c6af;
+  border-bottom: 2px solid #f6c6af;
+  border-radius: 10px;
+}
+
+#navbar div:hover {
+  cursor: pointer;
+  background: #c75575;
 }
 
 h1 {
   font-size: 60px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 32px;
   margin: 0;
 }
 

@@ -1,5 +1,6 @@
-const createPageContent = () => {
+const homePageContent = () => {
   const contentContainer = document.getElementById('content');
+
   const backdrop1 = addBackdrop(contentContainer);
   addTitle(backdrop1);
 
@@ -31,6 +32,8 @@ const addEnticement = (parent) => {
 
 const addHours = (parent) => {
   let hours = document.createElement('p');
+  let heading = document.createElement('h2');
+  heading.innerHTML = 'Hours';
   hours.innerHTML = 'Sunday: Ceres Hr3 - Hr9' + '<br />' + 
                     'Monday: Ceres Hr4 - Hr7' + '<br />' + 
                     'Tuesday: Ceres Hr4 - Hr7' + '<br />' + 
@@ -38,7 +41,8 @@ const addHours = (parent) => {
                     'Thursday: Ceres Hr4 - Hr7' + '<br />' + 
                     'Friday: Ceres Hr1 - Hr9' + '<br />' + 
                     'Saturday: Ceres Hr1 - Hr9' + '<br />';
+  parent.appendChild(heading);
   parent.appendChild(hours); 
 }
 
-export { createPageContent };
+export { homePageContent};
