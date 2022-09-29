@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/contact-page.js":
+/*!*****************************!*\
+  !*** ./src/contact-page.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"contactPageContent\": () => (/* binding */ contactPageContent)\n/* harmony export */ });\nconst contactPageContent = () => {\n\n}\n\n\n\n//# sourceURL=webpack://restaurant/./src/contact-page.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _initial_page__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./initial-page */ \"./src/initial-page.js\");\n\n\n(0,_initial_page__WEBPACK_IMPORTED_MODULE_0__.createPageContent)();\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _initial_page__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./initial-page */ \"./src/initial-page.js\");\n/* harmony import */ var _menu_page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu-page */ \"./src/menu-page.js\");\n/* harmony import */ var _contact_page__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contact-page */ \"./src/contact-page.js\");\n\n\n\n\nconst contentContainer = document.getElementById('content');\nconst nav = document.getElementById('navbar');\n\nconst clearPage = () => {\n  contentContainer.textContent = '';\n}\n\nlet homeTab = document.createElement('div');\nhomeTab.textContent = 'Home';\nhomeTab.addEventListener('click', () => {\n  clearPage();\n  (0,_initial_page__WEBPACK_IMPORTED_MODULE_0__.homePageContent)();\n})\n\nlet menuTab = document.createElement('div');\nmenuTab.textContent = 'Menu';\nmenuTab.addEventListener('click', () => {\n  clearPage();\n  (0,_menu_page__WEBPACK_IMPORTED_MODULE_1__.menuPageContent)();\n})\n\nlet contactTab = document.createElement('div');\ncontactTab.textContent = 'Contact';\n\nnav.appendChild(homeTab);\nnav.appendChild(menuTab);\nnav.appendChild(contactTab);\n\n(0,_initial_page__WEBPACK_IMPORTED_MODULE_0__.homePageContent)();\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +36,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ini
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createPageContent\": () => (/* binding */ createPageContent)\n/* harmony export */ });\nconst createPageContent = () => {\n  const contentContainer = document.getElementById('content');\n  const backdrop1 = addBackdrop(contentContainer);\n  addTitle(backdrop1);\n\n  const backdrop2 = addBackdrop(contentContainer);\n  addEnticement(backdrop2);\n\n  const backdrop3 = addBackdrop(contentContainer);\n  addHours(backdrop3);\n}\n\nconst addBackdrop = (parent) => {\n  let backdrop = document.createElement('div');\n  backdrop.classList.add('backdrop');\n  parent.appendChild(backdrop);\n  return backdrop \n}\n\nconst addTitle = (parent) => {\n  let title = document.createElement('h1');\n  title.innerHTML = 'Beltaloda\\'s Nutriments';\n  parent.appendChild(title);\n}\n\nconst addEnticement = (parent) => {\n  let enticement = document.createElement('p');\n  enticement.innerHTML = \"A Belter's Paradise! Enjoy the luxurious, green diet of Earth right here in the Belt. The finest and freshest sun grown foods, hard-burned right to our restaurant. Come walk the infamous \\\"Beltaloda tunnel of light\\\" and have the experience of a lifetime.\"\n  parent.appendChild(enticement);\n}\n\nconst addHours = (parent) => {\n  let hours = document.createElement('p');\n  hours.innerHTML = 'Sunday: Ceres Hr3 - Hr9' + '<br />' + \n                    'Monday: Ceres Hr4 - Hr7' + '<br />' + \n                    'Tuesday: Ceres Hr4 - Hr7' + '<br />' + \n                    'Wednesday: Ceres Hr3 - Hr5' + '<br />' + \n                    'Thursday: Ceres Hr4 - Hr7' + '<br />' + \n                    'Friday: Ceres Hr1 - Hr9' + '<br />' + \n                    'Saturday: Ceres Hr1 - Hr9' + '<br />';\n  parent.appendChild(hours); \n}\n\n\n\n//# sourceURL=webpack://restaurant/./src/initial-page.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"homePageContent\": () => (/* binding */ homePageContent)\n/* harmony export */ });\nconst homePageContent = () => {\n  const contentContainer = document.getElementById('content');\n\n  const backdrop1 = addBackdrop(contentContainer);\n  addTitle(backdrop1);\n\n  const backdrop2 = addBackdrop(contentContainer);\n  addEnticement(backdrop2);\n\n  const backdrop3 = addBackdrop(contentContainer);\n  addHours(backdrop3);\n}\n\nconst addBackdrop = (parent) => {\n  let backdrop = document.createElement('div');\n  backdrop.classList.add('backdrop');\n  parent.appendChild(backdrop);\n  return backdrop \n}\n\nconst addTitle = (parent) => {\n  let title = document.createElement('h1');\n  title.innerHTML = 'Beltaloda\\'s Nutriments';\n  parent.appendChild(title);\n}\n\nconst addEnticement = (parent) => {\n  let enticement = document.createElement('p');\n  enticement.innerHTML = \"A Belter's Paradise! Enjoy the luxurious, green diet of Earth right here in the Belt. The finest and freshest sun grown foods, hard-burned right to our restaurant. Come walk the infamous \\\"Beltaloda tunnel of light\\\" and have the experience of a lifetime.\"\n  parent.appendChild(enticement);\n}\n\nconst addHours = (parent) => {\n  let hours = document.createElement('p');\n  let heading = document.createElement('h2');\n  heading.innerHTML = 'Hours';\n  hours.innerHTML = 'Sunday: Ceres Hr3 - Hr9' + '<br />' + \n                    'Monday: Ceres Hr4 - Hr7' + '<br />' + \n                    'Tuesday: Ceres Hr4 - Hr7' + '<br />' + \n                    'Wednesday: Ceres Hr3 - Hr5' + '<br />' + \n                    'Thursday: Ceres Hr4 - Hr7' + '<br />' + \n                    'Friday: Ceres Hr1 - Hr9' + '<br />' + \n                    'Saturday: Ceres Hr1 - Hr9' + '<br />';\n  parent.appendChild(heading);\n  parent.appendChild(hours); \n}\n\n\n\n//# sourceURL=webpack://restaurant/./src/initial-page.js?");
+
+/***/ }),
+
+/***/ "./src/menu-page.js":
+/*!**************************!*\
+  !*** ./src/menu-page.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"menuPageContent\": () => (/* binding */ menuPageContent)\n/* harmony export */ });\nconst menuPageContent = () => {\n\n}\n\n\n\n//# sourceURL=webpack://restaurant/./src/menu-page.js?");
 
 /***/ })
 
