@@ -100,8 +100,8 @@ p {
 }
 
 .img-container {
-  max-width: 300px;
-  max-height: 300px;
+  width: 300px;
+  height: 300px;
   grid-row: 2 / 3;
   justify-self: end;
   text-align: end;

@@ -36,9 +36,9 @@ const menuPageContent = () => {
   addSubTitle(backdrop7, 'Small Dishes');
 
   const backdrop8 = addBackdrop(contentContainer);
-  addItem(backdrop8, 'Quinoa & Veggie Bowl', '240 CNY', veggieBowl);
+  addItem(backdrop8, 'Quinoa and Veggie Bowl', '240 CNY', veggieBowl);
   const backdrop9 = addBackdrop(contentContainer);
-  addItem(backdrop9, 'Garbanzo Bean & Avacado Salad', '240 CNY', garbanzoBowl);
+  addItem(backdrop9, 'Garbanzo Bean and Avacado Salad', '240 CNY', garbanzoBowl);
   const backdrop10 = addBackdrop(contentContainer);
   addItem(backdrop10, 'Mega Fruits Plate', '360 CNY', megaFruit);
   const backdrop11 = addBackdrop(contentContainer);
