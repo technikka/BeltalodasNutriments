@@ -6,7 +6,7 @@
 }
 
 html {
-  background-image: url("sci-fi-bg-rotate-90.jpg");
+  background: url("sci-fi-bg-rotate-90.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -94,14 +94,16 @@ p {
 .img-container {
   /* width: 300px;
   height: 300px; */
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 300px;
+  max-height: 300px;
   justify-self: end;
   text-align: end;
   padding: 15px;
+  
 }
 
 .img-container>img {
   max-width: 100%;
   max-height: 100%;
+  border-radius: 10px;
 }
