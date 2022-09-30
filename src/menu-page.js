@@ -23,43 +23,43 @@ const menuPageContent = () => {
   addSubTitle(backdrop2, 'Beverages');
 
   const backdrop3 = addBackdrop(contentContainer);
-  addItem(backdrop3, 'Blood Orange Tea', orangeTea);
+  addItem(backdrop3, 'Blood Orange Tea', '80 CNY', orangeTea);
   const backdrop4 = addBackdrop(contentContainer);
-  addItem(backdrop4, 'Oolong Tea', oolong);
+  addItem(backdrop4, 'Oolong Tea', '70 CNY', oolong);
   const backdrop5 = addBackdrop(contentContainer);
-  addItem(backdrop5, 'Coffee Latte', coffee);
+  addItem(backdrop5, 'Coffee Latte', '90 CNY', coffee);
   const backdrop6 = addBackdrop(contentContainer);
-  addItem(backdrop6, 'Baikal Stream Water', water);
+  addItem(backdrop6, 'Baikal Stream Water', '300 CNY', water);
 
   const backdrop7 = addBackdrop(contentContainer);
   backdrop7.classList.add('menu-subtitle');
   addSubTitle(backdrop7, 'Small Dishes');
 
   const backdrop8 = addBackdrop(contentContainer);
-  addItem(backdrop8, 'Quinoa & Veggie Bowl', veggieBowl);
+  addItem(backdrop8, 'Quinoa & Veggie Bowl', '240 CNY', veggieBowl);
   const backdrop9 = addBackdrop(contentContainer);
-  addItem(backdrop9, 'Garbanzo Bean & Avacado Salad', garbanzoBowl);
+  addItem(backdrop9, 'Garbanzo Bean & Avacado Salad', '240 CNY', garbanzoBowl);
   const backdrop10 = addBackdrop(contentContainer);
-  addItem(backdrop10, 'Mega Fruits Plate', megaFruit);
+  addItem(backdrop10, 'Mega Fruits Plate', '360 CNY', megaFruit);
   const backdrop11 = addBackdrop(contentContainer);
-  addItem(backdrop11, 'Zuchinni Cakes', zuchinni);
+  addItem(backdrop11, 'Zuchinni Cakes', '260 CNY', zuchinni);
 
   const backdrop12 = addBackdrop(contentContainer);
   backdrop12.classList.add('menu-subtitle');
   addSubTitle(backdrop12, 'Large Dishes');
 
   const backdrop16 = addBackdrop(contentContainer);
-  addItem(backdrop16, 'Honey Pepper Noodles', noodleDish);
+  addItem(backdrop16, 'Honey Pepper Noodles', '380 CNY', noodleDish);
   const backdrop18 = addBackdrop(contentContainer);
-  addItem(backdrop18, 'Salmon and Zuchinni', salmonDish);
+  addItem(backdrop18, 'Salmon and Zuchinni', '500 CNY', salmonDish);
   const backdrop13 = addBackdrop(contentContainer);
-  addItem(backdrop13, 'Smoked Potato Nut', potatoDish);
+  addItem(backdrop13, 'Smoked Potato Nut', '420 CNY', potatoDish);
   const backdrop14 = addBackdrop(contentContainer);
-  addItem(backdrop14, 'Clam Chowder Soup', clamChowder);
+  addItem(backdrop14, 'Clam Chowder Soup', '420 CNY', clamChowder);
   const backdrop15 = addBackdrop(contentContainer);
-  addItem(backdrop15, 'Ramen', ramen);
+  addItem(backdrop15, 'Ramen', '460 CNY', ramen);
   const backdrop17 = addBackdrop(contentContainer);
-  addItem(backdrop17, 'BBQ Chicken and Kale', chickenDish);
+  addItem(backdrop17, 'BBQ Chicken and Kale', '500 CNY', chickenDish);
 
 
 }
@@ -83,11 +83,14 @@ const addSubTitle = (parent, subtitle) => {
   parent.appendChild(title);
 }
 
-const addItem = (parent, itemName, imgPath) => {
+const addItem = (parent, itemName, itemPrice, imgPath) => {
   parent.classList.add('menu-item');
   let heading = document.createElement('h3');
   heading.innerHTML = itemName;
   parent.appendChild(heading);
+  let price = document.createElement('p');
+  price.innerHTML = itemPrice;
+  parent.appendChild(price);
   let imgContainer = document.createElement('div');
   imgContainer.classList.add('img-container');
   let img = document.createElement('img');
