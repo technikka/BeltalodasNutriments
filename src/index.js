@@ -1,4 +1,4 @@
-import { homePageContent } from './initial-page'
+import { homePageContent } from './home-page'
 import { menuPageContent } from './menu-page'
 import { contactPageContent } from './contact-page'
 

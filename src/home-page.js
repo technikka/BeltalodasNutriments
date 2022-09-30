@@ -26,7 +26,7 @@ const addTitle = (parent) => {
 
 const addEnticement = (parent) => {
   let enticement = document.createElement('p');
-  enticement.innerHTML = "A Belter's Paradise! Enjoy the luxurious, green diet of Earth right here in the Belt. The finest and freshest sun grown foods, hard-burned right to our restaurant. Come walk the infamous \"Beltaloda tunnel of light\" and have the experience of a lifetime."
+  enticement.innerHTML = "A Belter's Paradise! Enjoy the luxurious, green diet of Earth right here in the Belt. The finest and freshest sun grown foods, hard-burned right to our restaurant. Come walk the \"Beltaloda tunnel of light\", of system-wide fame, and have the experience of a lifetime."
   parent.appendChild(enticement);
 }
 
