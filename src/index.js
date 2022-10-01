@@ -25,6 +25,10 @@ menuTab.addEventListener('click', () => {
 
 let contactTab = document.createElement('div');
 contactTab.textContent = 'Contact';
+contactTab.addEventListener('click', () => {
+  clearPage();
+  contactPageContent();
+})
 
 nav.appendChild(homeTab);
 nav.appendChild(menuTab);

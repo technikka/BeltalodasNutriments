@@ -1,3 +1,5 @@
+import { addBackgroundCredit } from './img-credit'
+
 const homePageContent = () => {
   const contentContainer = document.getElementById('content');
 
@@ -5,10 +7,14 @@ const homePageContent = () => {
   addTitle(backdrop1);
 
   const backdrop2 = addBackdrop(contentContainer);
+  backdrop2.classList.add('color-backdrop');
   addEnticement(backdrop2);
 
   const backdrop3 = addBackdrop(contentContainer);
+  backdrop3.classList.add('color-backdrop');
   addHours(backdrop3);
+
+  addBackgroundCredit(contentContainer);
 }
 
 const addBackdrop = (parent) => {

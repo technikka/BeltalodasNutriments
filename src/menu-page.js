@@ -12,6 +12,7 @@ import clamChowder from './menu-images/do-mee-SH8_JmrsQcw-unsplash.jpg'
 import noodleDish from './menu-images/pexels-polina-tankilevitch-5848492.jpg'
 import chickenDish from './menu-images/nathan-dumlao-8Uv6eanQWzY-unsplash.jpg'
 import salmonDish from './menu-images/casey-lee-awj7sRviVXo-unsplash.jpg'
+import { addFoodCredit, addBackgroundCredit } from './img-credit'
 
 const menuPageContent = () => {
   const contentContainer = document.getElementById('content');
@@ -61,7 +62,8 @@ const menuPageContent = () => {
   const backdrop17 = addBackdrop(contentContainer);
   addItem(backdrop17, 'BBQ Chicken and Kale', '500 CNY', chickenDish);
 
-
+  addFoodCredit(contentContainer);
+  addBackgroundCredit(contentContainer);
 }
 
 const addBackdrop = (parent) => {
@@ -98,6 +100,5 @@ const addItem = (parent, itemName, itemPrice, imgPath) => {
   imgContainer.appendChild(img)
   parent.appendChild(imgContainer);
 }
-
 
 export { menuPageContent }
