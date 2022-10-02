@@ -1,5 +1,3 @@
-import { addBackgroundCredit } from './img-credit'
-
 const contactPageContent = () => {
   const contentContainer = document.getElementById('content');
 
@@ -14,8 +12,6 @@ const contactPageContent = () => {
                    'If you\'re off station but within docking range, our host will be glad to communicate with you in real time, regardless of if you plan to dock.';
   para.style.textAlign = 'start';
   backdrop2.appendChild(para); 
-
-  addBackgroundCredit(contentContainer);
 }
 
 const addBackdrop = (parent) => {
