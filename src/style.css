@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Demora';
-  src: url('./Demora-w1Wr6.otf');
+  src: url('./assets/Demora-w1Wr6.otf');
   font-weight: 400;
   font-style: normal;
 }
 
 html {
-  background: url("sci-fi-bg-rotate-90.jpg") no-repeat center center fixed;
+  background: url("./assets/sci-fi-bg-rotate-90.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   display: grid;
