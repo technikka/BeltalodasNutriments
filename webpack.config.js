@@ -6,6 +6,8 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    /* Warning: this option removes index.html, need to restore after using clean option. */
+    // clean: true,
   },
   module: {
     rules: [
