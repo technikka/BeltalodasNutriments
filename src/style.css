@@ -85,6 +85,7 @@ p {
 
 .menu-subtitle {
   width: 60%;
+  max-width: 500px;
 }
 
 .menu-item {
