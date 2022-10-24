@@ -2,6 +2,7 @@ import { homePageContent } from './home-page'
 import { menuPageContent } from './menu-page'
 import { contactPageContent } from './contact-page'
 import { addBackgroundCredit, addFoodCredit } from './img-credit'
+import './style.css'
 
 const html = document.querySelector('html');
 const contentContainer = document.getElementById('content');
